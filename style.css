@@ -1,17 +1,21 @@
 body {
-  background-image: url(imgs/lightbulb.jpg);
+  background-color: #020201ed;
   background-size: 100%;
   background-position: center;
   font-family: "Gill Sans", sans serif;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+main {
+  padding-top: 50px; 
+}
 
 h1 {
   font-family: "the-seasons", sans-serif !important;
   font-weight: 700;
-  font-size: 110px;
+  font-size: 98px;
   font-style: italic;
+  color:aliceblue;
 }
 h2 {
   font-family: "the-seasons", sans-serif !important;
@@ -27,6 +31,18 @@ h5 {
   font-family: "the-seasons", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+.content ul {
+  font-family: 'the-seasons', sans-serif; /* Replace with your desired font */
+  font-size: 16px; /* Optional: Adjust font size */
+  color: #1a1303; /* Optional: Adjust font color */
+}
+.navbar-brand {
+  font-family: "the-seasons", sans-serif !important;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: italic;
 }
 
 /* Navbar */
@@ -69,7 +85,7 @@ nav div {
 }
 
 .navbar-text {
-  font-family: "amandine", sans-serif;
+  font-family: "the-seasons", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -99,20 +115,109 @@ nav div {
 }
 .nav-item {
   font-family: "the-seasons", sans-serif;
+  color: white;
 }
 
-.box-container {
-  display: flex;
-  padding: 10px;
-  width: 1060px;
-  margin: 0 auto 100px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 10px;
+.box-container{
+  display: flex
+  padding: 20px;
+  width: 960px;
+  margin: 0 auto 30px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   color: #000;
 }
 
-.newFont {
-  font-family: "the-seasons";
+.box-container h6 {
+  color: #000;
+  display: block;
 }
+footer {
+  color: aliceblue; 
+  font-family: "the-seasons", sans-serif; /* Font family */
+  text-align: center; /* Center content */
+  position: fixed; /* Sticks the footer at the bottom */
+  bottom: 0; /* Aligns it to the bottom */
+  width: 100%; /* Full width footer */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Roboto:ital,wght@0,500;0,900;1,500&display=swap");
+
+
+/*Navigation*/
+nav{
+  top: 0;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 1; 
+  background: #222;
+  box-shadow: 0px 1px 2px rgba(237, 239, 197, 0.5), 
+              0px 2px 4px rgba(237, 239, 197, 0.5), 
+              0px 4px 8px rgba(237, 239, 197, 0.5), 
+              0px 8px 16px rgba(237, 239, 197, 0.5);
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 20px; /* Space between cards */
+}
+.card {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  border-radius: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(255, 243, 164, 0.8);
+  background-size: contain !important; /*Show the full image*/
+  background-repeat: no-repeat !important; /* Prevent tiling of smaller images */
+  background-position: center; 
+  
+  &::after {
+    width:100%;
+    height:100%;
+    border-radius:50px;
+    position:absolute;
+    top:0;left:0;
+    z-index:-1;
+    content:'';
+    background:inherit;
+    filter:blur(20px);
+    transform:scale(1.05);
+    opacity:0.8;
+    transition:500ms all ease-in-out 0ms;
+  }
+  &:hover::after {
+    transform:scale(0.8);
+    opacity:0;
+  }
+}
+ 
+.card:nth-of-type(1) {
+  background:url('imgs/baby.png')
+}
+.card:nth-of-type(2) {
+  background: url('imgs/young.png');
+}
+.card:nth-of-type(3) {
+  background:url('imgs/Thomas\ young.png')
+}
+.card:nth-of-type(4) {
+  background:url('imgs/old.png')
+}
+
+
