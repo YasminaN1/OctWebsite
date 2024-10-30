@@ -138,7 +138,6 @@ footer {
   color: aliceblue; 
   font-family: "the-seasons", sans-serif; /* Font family */
   text-align: center; /* Center content */
-  position: fixed; /* Sticks the footer at the bottom */
   bottom: 0; /* Aligns it to the bottom */
   width: 100%; /* Full width footer */
 }
