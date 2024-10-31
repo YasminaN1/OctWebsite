@@ -37,14 +37,15 @@ h5 {
 .card-1 h5 {
   font-family: "the-seasons", sans-serif;
   font-weight: 300;
+  font-size: 30px;
   font-style: normal;
   color: aliceblue;
 }
 
 .content ul {
-  font-family: 'the-seasons', sans-serif; /* Replace with your desired font */
-  font-size: 16px; /* Optional: Adjust font size */
-  color: #1a1303; /* Optional: Adjust font color */
+  font-family: 'the-seasons', sans-serif; 
+  font-size: 16px; 
+  color: #1a1303; 
 }
 .navbar-brand {
   font-family: "the-seasons", sans-serif !important;
@@ -113,7 +114,7 @@ nav div {
   border-radius: 5px;
   border: none;
   background-size: 120% auto;
-  background-image: linear-gradient(315deg, #fff9c8 25%, #0f0d0e 75%);
+  background-image: linear-gradient(315deg, #f0edd9 25%, #0f0d0e 75%);
 }
 .css-button-gradient--1:hover {
   background-position: right center;
@@ -144,14 +145,14 @@ nav div {
 }
 footer {
   color: aliceblue; 
-  font-family: "the-seasons", sans-serif; /* Font family */
-  text-align: center; /* Center content */
-  bottom: 0; /* Aligns it to the bottom */
-  width: 100%; /* Full width footer */
+  font-family: "the-seasons", sans-serif; 
+  text-align: center; 
+  bottom: 0; 
+  width: 100%; 
 }
 
 footer a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; 
 }
 
 
