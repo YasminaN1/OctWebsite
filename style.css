@@ -229,4 +229,12 @@ nav{
   background:url('imgs/old.png')
 }
 
-/*innovation cards*/
+.right-padding {
+  padding-right: 20px;
+}
+.bottom-padding {
+  padding-bottom: 15px;
+}
+.top-padding {
+  padding-top: 15px;
+}
